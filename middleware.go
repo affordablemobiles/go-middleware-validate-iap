@@ -24,7 +24,8 @@ func GetValidateIAPMiddleware(emailVal emailValFunc) negroni.HandlerFunc {
 			if ok, err := emailVal(r.Context(), claims.Email); err != nil {
 				log.Printf("ValidateIAP: Failed to call email validation function: %s", err)
 			} else if ok {
-				next(w, r)
+				ctx, _ := setUserEmailToContext(r.Context(), claims.Email)
+				next(w, r.WithContext(ctx))
 				return
 			}
 		}
@@ -45,7 +46,8 @@ func GetValidateIAPAppEngineMiddleware(emailVal emailValFunc) negroni.HandlerFun
 			if ok, err := emailVal(r.Context(), claims.Email); err != nil {
 				log.Printf("ValidateIAP: Failed to call email validation function: %s", err)
 			} else if ok {
-				next(w, r)
+				ctx, _ := setUserEmailToContext(r.Context(), claims.Email)
+				next(w, r.WithContext(ctx))
 				return
 			}
 		} else {
