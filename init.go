@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/imkira/gcp-iap-auth/jwt"
+	"github.com/a1comms/gcp-iap-auth/jwt"
 )
 
 var cfg *jwt.Config

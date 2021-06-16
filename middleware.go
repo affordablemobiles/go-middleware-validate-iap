@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/imkira/gcp-iap-auth/jwt"
+	"github.com/a1comms/gcp-iap-auth/jwt"
 	"github.com/urfave/negroni"
 )
 
@@ -25,6 +25,7 @@ func GetValidateIAPMiddleware(emailVal emailValFunc) negroni.HandlerFunc {
 				log.Printf("ValidateIAP: Failed to call email validation function: %s", err)
 			} else if ok {
 				ctx, _ := setUserEmailToContext(r.Context(), claims.Email)
+				ctx, _ = setGoogleClaimToContext(ctx, claims.Google)
 				next(w, r.WithContext(ctx))
 				return
 			}
@@ -47,6 +48,7 @@ func GetValidateIAPAppEngineMiddleware(emailVal emailValFunc) negroni.HandlerFun
 				log.Printf("ValidateIAP: Failed to call email validation function: %s", err)
 			} else if ok {
 				ctx, _ := setUserEmailToContext(r.Context(), claims.Email)
+				ctx, _ = setGoogleClaimToContext(ctx, claims.Google)
 				next(w, r.WithContext(ctx))
 				return
 			}
