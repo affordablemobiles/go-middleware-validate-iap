@@ -3,8 +3,7 @@ module github.com/a1comms/go-middleware-validate-iap
 go 1.16
 
 require (
-	cloud.google.com/go v0.84.0
-	github.com/a1comms/gcp-iap-auth v0.0.4
-	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
+	cloud.google.com/go/compute v1.6.1
+	github.com/a1comms/gcp-iap-auth v0.0.6
 	github.com/urfave/negroni v1.0.0
 )
