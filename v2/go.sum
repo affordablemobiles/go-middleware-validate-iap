@@ -1,0 +1,11 @@
+cloud.google.com/go/compute v1.14.0 h1:hfm2+FfxVmnRlh6LpB7cg1ZNU+5edAHmW679JePztk0=
+cloud.google.com/go/compute v1.14.0/go.mod h1:YfLtxrj9sU4Yxv+sXzZkyPjEyPBZfXHUvjxega5vAdo=
+cloud.google.com/go/compute/metadata v0.2.3 h1:mg4jlk7mCAj6xXp9UJ4fjI9VUI5rubuGBW5aJ7UnBMY=
+cloud.google.com/go/compute/metadata v0.2.3/go.mod h1:VAV5nSsACxMJvgaAuX6Pk2AawlZn8kiOGuCv6gTkwuA=
+github.com/a1comms/gcp-iap-auth v0.0.6 h1:1IrAbh/YVltUsZWD1LD6uo5qNPljgto9/QqRev6ElbQ=
+github.com/a1comms/gcp-iap-auth v0.0.6/go.mod h1:zkzQ9F8K7gvAcSktJ8GWSpagi4+CQnmyFlIJWjuDjn4=
+github.com/golang-jwt/jwt/v4 v4.4.1 h1:pC5DB52sCeK48Wlb9oPcdhnjkz1TKt1D/P7WKJ0kUcQ=
+github.com/golang-jwt/jwt/v4 v4.4.1/go.mod h1:m21LjoU+eqJr34lmDMbreY2eSTRJ1cv77w39/MY0Ch0=
+github.com/namsral/flag v1.7.4-pre/go.mod h1:OXldTctbM6SWH1K899kPZcf65KxJiD7MsceFUpB5yDo=
+github.com/urfave/negroni v1.0.1-0.20200608235619-7de0dfc1ff79 h1:310aEUwMcbpcxq9wp7hSr9f+mRV6grcai3HxdAmVl9k=
+github.com/urfave/negroni v1.0.1-0.20200608235619-7de0dfc1ff79/go.mod h1:Meg73S6kFm/4PpbYdq35yYWoCZ9mS/YSx+lKnmiohz4=
