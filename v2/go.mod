@@ -10,5 +10,5 @@ require (
 
 require (
 	cloud.google.com/go/compute v1.14.0 // indirect
-	github.com/golang-jwt/jwt/v4 v4.4.1 // indirect
+	github.com/golang-jwt/jwt/v4 v4.5.1 // indirect
 )
